@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Get Car</title>
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="style.css" />
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
+
+        <script
+        type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.15.3/xlsx.full.min.js"
+         ></script>
+    </head>
+    
+    <body>
+    
+        <input class="button" type="file" id="fileUpload" accept=".xls,.xlsx" /><br />
+
+        <button class="button" type="button" id="uploadExcel">Convert</button>
+
+        <pre id="jsonData"></pre>
+
+        <div align="center">
+
+            <select class="button" id="selectYear" onchange="onSelectYear(this)">
+                <option value="0">Year</option>
+            </select>
+
+            <select class="button" id="selectMaker" onchange="onSelectMake(this)">
+                <option value="0">Make</option>
+            </select>
+
+            <select class="button" id="selectModel" onchange="onSelectModel(this)">
+                <option value="0">Model</option>
+            </select>
+
+            <select class="button" id="selectNote" onchange="onSelectNote(this)">
+                <option value="0">Note</option>
+            </select>
+
+        </div>
+
+        <script type="text/javascript" src="script.js"></script>
+
+    </body>
+    
+</html>
